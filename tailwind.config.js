@@ -14,10 +14,11 @@ module.exports = {
               '1440': '1440px'
             },
             fontFamily: {
-                fira: ['fira-code', 'sans-serif'],
+                'firacode': ['firacode', 'sans-serif'],
             },
             colors: {
                 gdark: '#282C33',
+                glight: '#abb2bf',
             },
         },
     },

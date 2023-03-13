@@ -2,10 +2,15 @@
 
 @php
 $classes = ($active ?? false)
-            ? 'inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out'
-            : 'inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out';
+            ? 'group flex justify-start items-end relative text-xl font-semibold'
+            : 'group flex justify-start items-end text-glight relative text-xl font-normal';
 @endphp
 
 <a {{ $attributes->merge(['class' => $classes]) }}>
+    <span class="text-yellow-400">#</span>
     {{ $slot }}
+    <span class="absolute -right-4 bottom-0 text-yellow-300 animate-pulse hidden group-hover:block transition-all duration-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" /></svg>
+    </span>
 </a>
