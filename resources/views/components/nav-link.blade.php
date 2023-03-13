@@ -2,8 +2,8 @@
 
 @php
 $classes = ($active ?? false)
-            ? 'group flex justify-start items-end relative text-xl font-semibold'
-            : 'group flex justify-start items-end text-glight relative text-xl font-normal';
+            ? 'group flex justify-start items-end relative text-lg font-semibold'
+            : 'group flex justify-start items-end text-glight relative text-lg font-normal';
 @endphp
 
 <a {{ $attributes->merge(['class' => $classes]) }}>

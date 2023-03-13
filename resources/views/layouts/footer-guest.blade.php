@@ -1,4 +1,4 @@
-<footer id="footer" class="w-full border-t ">
+<footer id="footer" class="w-full border-t mt-20">
     <div class="flex justify-between items-start flex-col sm:flex-row gap-8 sm:gap-0 max-w-5xl mx-auto py-8 px-4 lg:px-0">
         <div class="flex justify-start items-start flex-col ">
             <div class="flex justify-start items-end gap-8">
@@ -10,13 +10,13 @@
                         </svg>
                     </span>
                 </a>
-                <a href="mailto:contact@301dev.com" class="text-glight text-lg font-light">contact<span title="@">[at]</span>301dev.com</a>
+                <a href="mailto:contact@301dev.com" class="text-glight font-light">contact<span title="@">[at]</span>301dev.com</a>
             </div>
-            <p class="text-lg mt-2">Web Developer based in the south-west of France</p>
+            <p class="mt-2">Web Developer based in the south-west of France</p>
         </div>
 
         <div>
-            <p class="text-2xl font-bold"><span class="text-yellow-400">#</span>Follow</p>
+            <p class="text-lg font-medium"><span class="text-yellow-400">#</span>Follow</p>
             <div class="flex justify-start items-center gap-4 mt-2">
                 <a href="#" class="text-glight hover:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -40,6 +40,6 @@
         </div>
     </div>
     <div class="flex justify-center items-center max-w-5xl mx-auto py-4 px-4 lg:px-0">
-        <p class="font-light">Copyright 2023 - 301DEV.COM</p>
+        <p class="font-light text-xs">Copyright 2023 - 301DEV.COM</p>
     </div>
 </footer>
